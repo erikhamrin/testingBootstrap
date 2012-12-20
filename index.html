@@ -36,7 +36,9 @@
       z-index: 10;
       margin-top: 20px;
       margin-bottom: -90px;
-      /*margin-right: 320px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+      /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+      /*margin-right: 320px; 
+      /* Making space for the twitterfeed*/
     }
     .navbar-wrapper .navbar {
 
@@ -44,6 +46,8 @@
 
     /* Remove border and change up box shadow for more contrast */
     .navbar .navbar-inner {
+      margin-right: 3%;
+      margin-left: 3%;
       border: 0;
       -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
          -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
@@ -75,7 +79,7 @@
 
     /* Carousel base class */
     .carousel {
-      margin-bottom: 60px;
+      margin-bottom: 30px;
     }
 
     .carousel .container {
@@ -90,10 +94,14 @@
       text-shadow: 0 1px 1px rgba(0,0,0,.4);
       background-color: transparent;
       border: 0;
+      margin-right: 3%;
+      margin-left: 3%;
     }
 
     .carousel .item {
       height: 500px;
+      margin-right: 3%;
+      margin-left: 3%;
     }
 
     .carousel img {
@@ -110,6 +118,8 @@
       max-width: 550px;
       padding: 0 20px;
       margin-top: 200px;
+      margin-left: 20px;
+      margin-right: 20px;
     }
 
     .carousel-caption h1,
@@ -122,7 +132,6 @@
     .carousel-caption .btn {
       margin-top: 10px;
     }
-
 
 
     /* MARKETING CONTENT
@@ -193,15 +202,29 @@
       .navbar-inner {
         border-radius: 0;
         margin: -20px 0;
+        margin-right: 3%;
+        margin-left: 3%;
       }
 
       .carousel .item {
         height: 500px;
+        margin-right: 3%;
+        margin-left: 3%;
       }
       .carousel img {
         width: auto;
         height: 500px;
       }
+      .carousel-control {
+      height: 60px;
+      margin-top: 0;
+      font-size: 100px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      margin-right: 3%;
+      margin-left: 3%;
+    }
 
       .featurette {
         height: auto;
@@ -220,18 +243,24 @@
     @media (max-width: 767px) {
 
       .navbar-inner {
+        border-radius:  0;
         margin: -20px;
+        margin-right: 3%;
+        margin-left: 3%;
       }
 
       .carousel {
         margin-left: -20px;
         margin-right: -20px;
+        margin-bottom: -15px;
       }
       .carousel .container {
-
+       background-position: center;
       }
       .carousel .item {
         height: 300px;
+        margin-right: 3%;
+        margin-left: 3%;
       }
       .carousel img {
         height: 300px;
@@ -242,15 +271,25 @@
         margin-top: 100px;
       }
       .carousel-caption h1 {
-        font-size: 30px;
+        font-size: 20px;
       }
       .carousel-caption .lead,
       .carousel-caption .btn {
-        font-size: 18px;
+        font-size: 12px;
+        /* Adding a fixed font size to try responsiveness. */
       }
-
+      .carousel-control {
+      height: 40px;
+      margin-top: 0;
+      font-size: 80px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      margin-right: 3%;
+      margin-left: 3%;
+    }
       .marketing .span4 + .span4 {
-        margin-top: 40px;
+        margin-top: -15px;
       }
 
       .featurette-heading {
@@ -336,6 +375,7 @@
     </div>-->
     <!-- Carousel
     ================================================== -->
+  
     <div id="myCarousel" class="carousel slide">
       <div class="carousel-inner">
         <div class="item active">
@@ -372,7 +412,7 @@
       <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
       <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
     </div><!-- /.carousel -->
-
+  
 
 
     <!-- Marketing messaging and featurettes
@@ -461,13 +501,10 @@
     <script src="js/bootstrap-collapse.js"></script>
     <script src="js/bootstrap-carousel.js"></script>
     <script src="js/bootstrap-typeahead.js"></script>
-    <script>
+   <script>
         $('#myCarousel').carousel({
-          interval: 2000;
         });
-      //});
     </script>
-
 
   <!--<script>
       //$(document).ready(function(){
@@ -475,7 +512,7 @@
           interval
         });
       //});
-//    </script> -->
+      </script> -->
 
     <!--<script>
       !function ($) {

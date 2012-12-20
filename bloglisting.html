@@ -12,22 +12,8 @@
 
 <!-- styles -->
 <link href="css/bootstrap.css" rel="stylesheet">
-/*<link href="css/duggie.css" rel="stylesheet">*/
-<style type="text/css">
-  body {
-    padding-top: 92px;
-    padding-bottom: 40px;
-  }
-</style>
-<link href="dd/css/bootstrap-responsive.css" rel="stylesheet">
-
-<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-<!--[if lt IE 9]>
-  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-
-<!-- fav and touch icons -->
-<link rel="shortcut icon" href="../favicon.ico">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<link href="css/sff_base.css" rel="stylesheet">
 
 <script>
 // When ready...
@@ -42,57 +28,109 @@ window.addEventListener("load",function() {
 
 </head>
 <body>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-            <!-- toggle  -->
+    <!--Reuse the navbar från index.html -->
+
+<div class="navbar-wrapper">
+    
+    <!--<div class="span11">   -->
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar navbar-inverse">
+
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
             <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
             </a>
-            <!-- shown -->
-            <a href="index.html" class="pull-left hidden-phone"><img id="top-logo" src="dd/images/duggandesign.png"></a>
-            <a href="index.html" class="pull-left visible-phone"><img id="top-logo" src="dd/images/duggandesign-phone.png"></a>
-             
-            <!-- hides -->
-            <div class="nav-collapse">
+            
+            <a class="brand" href="#">SFF</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
               <ul class="nav">
-                <li class=""><a href="dd/about.html">About</a></li>
-                <li class=""><a href="dd/works.html">Works</a></li>
-                <li class=""><a href="dd/contact.html">Contact</a></li>
+                <li class="active"><a href="#">Hem</a></li>
+                <li><a href="#about">Dokument</a></li>
+                <li><a href="#contact">Ta certifikat</a></li>
+                <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Om förbundet<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Organisation</a></li>
+                    <li><a href="#">Styrelse</a></li>
+                    <li><a href="#">Försvarsmakten</a></li>
+                    <li class="divider"></li>
+                    <li class="nav-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
               </ul>
-            </div>
-         
-        </div>
-      </div>
-    </div>        
-    <div id="stitch-row"></div>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+    <!-- END of navbar -->
+
+    <!--<div id="container marketing"></div>
 	<div class="container">
-        	<div class="fduggie-info top-header">
-              <h1>I'm Fritz Duggan.</h1>
-              <h2 class="hidden-phone"><a href="dd/about.html">Designer, gamer, boarder<br>and martial artist.</a></h2>
-          	</div>
-    	<div class="row home-buttons">
-            <a href="dd/about.html" class="span6 home-button visible-phone">More about me.</a>
-            <a href="dd/works.html" class="span6 home-button">View my work.</a>
-            <a href="dd/contact.html" class="span6 home-button">Get in touch.</a>
-        </div>    
-    </div>
-    <div id="stitch-row"></div>
-	<div class="container">
-      <h1>Come and visit.</h1>
-      <h2 class="hidden-phone">I'm all over the place!</h2>
+      <h1>The blogs we run</h1>
+      <h2 class="hidden-phone">Warning. Content may vary!</h2>
         <div class="row home-buttons">
-            <a href="http://dribbble.com/fduggie" target="_blank" class="span4 home-button dribbbs">dribbble</a>
-            <a href="https://www.facebook.com/fritz.duggan" target="_blank" class="span4 home-button face">facebook</a>
-            <a href="http://twitter.com/#!/dravean" target="_blank" class="span4 home-button tweet">twitter</a>
+            <a href="#" target="_blank" class="span4 home-button dribbbs">dribbble</a>
+            <a href="#" target="_blank" class="span4 home-button face">facebook</a>
+            <a href="#" target="_blank" class="span4 home-button tweet">twitter</a>
         </div>
     </div>
     <div id="stitch-row"></div>
 
-<!-- javascript
-================================================== -->
+  -->
+
+  <!-- Start the Featurettes -->
+  <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="img/fire_cropped.png">
+        <h2 class="featurette-heading">sffInDubai2012 <span class="muted">Fallskärmshoppning som det borde vara!</span></h2>
+        <p class="lead">Bloggen är stängd, men kolla gärna igenom för att minnas de tävlingar som var och det fantastiska resultatet som Sverige fick.</p>
+      </div>
+
+  <hr class="featurette-divider">
+
+  <div class="featurette">
+        <img class="featurette-image pull-right" src="img/altair_cropped.png">
+        <h2 class="featurette-heading">SM2013<span class="muted">It'll blow your mind.</span></h2>
+        <p class="lead">VM är klart och vi drar vidare. Denna blogg täcker förberedelser och går sedan in på att rapportera från tävlingen. Det är snart sommar igen!</p>
+      </div>
+      
+  <hr class="featurette-divider">
+
+
+        <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+   
+<!--
+
+javascript
+================================================== 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script src="dd/js/bootstrap-transition.js"></script>
 <script src="dd/js/bootstrap-alert.js"></script>
@@ -112,7 +150,7 @@ window.addEventListener("load",function() {
 <script type="text/javascript">
 _uacct = "UA-2314442-2";
 urchinTracker();
-</script>
+</script> --> 
 
   </body>
 </html>

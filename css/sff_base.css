@@ -218,14 +218,15 @@
       .featurette {
         height: auto;
         padding: 0;
-        margin: -20px 0;
       }
+
       .featurette-image.pull-left,
       .featurette-image.pull-right {
         display: block;
         float: none;
-        max-width: 40%;
+        max-width: 80%;
         margin: 0 auto 20px;
+
       }
       .featurette p {
         font-size: 14px;
@@ -290,7 +291,7 @@
         padding-top: 20px;
       }
       .featurette-heading {
-        font-size: 30px;
+        font-size: 18px;
       }
       .featurette .lead {
         font-size: 18px;
